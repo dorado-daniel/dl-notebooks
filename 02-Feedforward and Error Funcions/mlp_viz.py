@@ -351,41 +351,42 @@ def _plot_network(
                     perp = 0.03 if ((i - j) % 2 == 0) else -0.03
                     _label_along(ax, x_prev, y_prev[i], x_curr, y_curr[j], f"{w:.2f}", t, perp)
 
-        # Nodos actuales
-        # === Nodos actuales ===
-# Si tenemos activaciones reales (sample), colorear nodos según estén activos o apagados
-    if node_values is not None and li < len(node_values):
-        activations = node_values[li]["a"].numpy()[0]
-        colors = ["lightgray" if a == 0 else "teal" for a in activations]
-    else:
-        colors = ["teal"] * out_features
-    
-    ax.scatter(
-        [x_curr] * out_features,
-        y_curr,
-        s=600,
-        color=colors,
-        edgecolor="black",
-        zorder=3
-    )
-    
-    # === Etiquetas, activaciones y valores ===
-    for j, y in enumerate(y_curr):
-        bias_str = f"  b={b[j]:.2f}" if (show_bias and b is not None) else ""
-        ax.text(x_curr + 0.08, y, f"h{j+1}{bias_str}", fontsize=11, va="center", ha="left")
-    
-        if show_activation_names:
-            act_name = per_neuron_acts[li][j]
-            if act_name is not None:
-                ax.text(x_curr, y - 0.1, f"{act_name}", fontsize=9, va="top", ha="center", color="dimgray")
-    
+        # === Nodos actuales (con sombreado activo/apagado si hay sample) ===
         if node_values is not None and li < len(node_values):
-            z = float(node_values[li]["z"][0, j])
-            a = float(node_values[li]["a"][0, j])
-            # Valor activado dentro del nodo
-            ax.text(x_curr, y, f"{a:.2f}", fontsize=9, color="white", ha="center", va="center")
-            # Valor de preactivación justo debajo en gris
-            ax.text(x_curr, y - 0.2, f"z={z:.2f}", fontsize=8, color="dimgray", ha="center", va="top")
+            activations_np = node_values[li]["a"].numpy()[0]
+            colors = ["lightgray" if a == 0 else "teal" for a in activations_np]
+        else:
+            colors = ["teal"] * out_features
+
+        ax.scatter(
+            [x_curr] * out_features,
+            y_curr,
+            s=600,
+            color=colors,
+            edgecolor="black",
+            zorder=3
+        )
+
+        # === Etiquetas, activaciones y valores ===
+        for j, y in enumerate(y_curr):
+            # Etiqueta del nodo: h{j+1} o ŷ{j+1} si es la última capa
+            is_output_layer = (li == L - 1)
+            node_name = (f"ŷ{j+1}" if is_output_layer else f"h{j+1}")
+            bias_str = f"  b={b[j]:.2f}" if (show_bias and b is not None) else ""
+            ax.text(x_curr + 0.08, y, f"{node_name}{bias_str}", fontsize=11, va="center", ha="left")
+
+            if show_activation_names:
+                act_name = per_neuron_acts[li][j]
+                if act_name is not None:
+                    ax.text(x_curr, y - 0.1, f"{act_name}", fontsize=9, va="top", ha="center", color="dimgray")
+
+            if node_values is not None and li < len(node_values):
+                z = float(node_values[li]["z"][0, j])
+                a = float(node_values[li]["a"][0, j])
+                # Valor activado dentro del nodo
+                ax.text(x_curr, y, f"{a:.2f}", fontsize=9, color="white", ha="center", va="center")
+                # Valor de preactivación justo debajo en gris
+                ax.text(x_curr, y - 0.2, f"z={z:.2f}", fontsize=8, color="dimgray", ha="center", va="top")
 
         # siguiente capa
         y_prev, x_prev = y_curr, x_curr
