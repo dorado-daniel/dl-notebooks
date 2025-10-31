@@ -2,7 +2,9 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+#Lock and log files
+*.lock
+*.log
 # C extensions
 *.so
 data
