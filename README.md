@@ -107,11 +107,11 @@ Las dependencias del proyecto se encuentran especificadas en `requirements.txt`.
 
 ## Uso
 
-Los notebooks están diseñados para ejecutarse secuencialmente dentro de cada sección. Se recomienda seguir el orden numérico para una comprensión progresiva de los conceptos.
+Los notebooks están diseñados para ejecutarse secuencialmente dentro de cada sección. Se recomienda seguir el orden numérico.
 
 ## Dataset
 
-Los notebooks descargan automáticamente los datasets necesarios (MNIST, CIFAR-10) en el directorio `./data` durante la primera ejecución.
+Los notebooks descargan automáticamente los datasets necesarios en el directorio `./data` durante la primera ejecución.
 
 ## Hardware
 
