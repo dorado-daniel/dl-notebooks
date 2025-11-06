@@ -101,6 +101,22 @@
 - Ajuste de hiperparámetros y optimización de GPU
 - TensorBoard para visualización en tiempo real
 
+[**03.5-CNN-CIFAR-10-Color-More-Tunning.ipynb**](2-Convolutional%20Neural%20Networks/03.5-CNN-CIFAR-10-Color-More-Tunning.ipynb)
+- Optimización avanzada con ReduceLROnPlateau y label smoothing
+- Técnicas de regularización adicionales para mejorar generalización
+- Análisis de métricas multiclase (Precision, Recall, F1)
+
+[**04-VGGNET16-BN_CIFAR10.ipynb**](2-Convolutional%20Neural%20Networks/04-VGGNET16-BN_CIFAR10.ipynb)
+- Implementación de VGG16 con Batch Normalization para CIFAR-10
+- Arquitectura basada en bloques repetitivos de convoluciones
+- Comparación de rendimiento con CNNs simples (~15M parámetros)
+
+[**05-ResNet20-CIFAR10.ipynb**](2-Convolutional%20Neural%20Networks/05-ResNet20-CIFAR10.ipynb)
+- ResNet-20: introducción a conexiones residuales (skip connections)
+- Solución al problema del gradiente desvanecido en redes profundas
+- Arquitectura eficiente con 9 bloques residuales y ~270K parámetros
+- Scheduler MultiStepLR para convergencia óptima
+
 ## Requisitos
 
 Las dependencias del proyecto se encuentran especificadas en `requirements.txt`.

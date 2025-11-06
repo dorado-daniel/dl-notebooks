@@ -1,0 +1,11 @@
+--2025-11-05 19:14:42--  https://downloads.cursor.com/production/7a31bffd467aa2d9adfda69076eb924e9062cb27/linux/x64/cursor-reh-linux-x64.tar.gz
+Resolving downloads.cursor.com (downloads.cursor.com)... 2606:4700::6812:1180, 2606:4700::6812:1080, 104.18.16.128, ...
+Connecting to downloads.cursor.com (downloads.cursor.com)|2606:4700::6812:1180|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 65428957 (62M) [application/gzip]
+Saving to: ‘/root/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20-1762366482156694760.tar.gz’
+
+                 /root/.cursor-se   0%[                                                           ]       0  --.-KB/s                               /root/.cursor-ser  24%[=============>                                             ]  15.00M  72.2MB/s                              /root/.cursor-serv  34%[===================>                                       ]  21.69M  52.8MB/s                             /root/.cursor-serve  65%[=====================================>                     ]  40.76M  66.7MB/s                            /root/.cursor-server  98%[=========================================================> ]  61.63M  76.0MB/s               /root/.cursor-server/bin/7a31bffd 100%[==========================================================>]  62.40M  76.6MB/s    in 0.8s    
+
+2025-11-05 19:14:43 (76.6 MB/s) - ‘/root/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20-1762366482156694760.tar.gz’ saved [65428957/65428957]
+
