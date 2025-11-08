@@ -5,131 +5,131 @@
 ### 1.1 Tensors and Activations Functions
 
 [**01-Tensor_Fundamentals.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/01-Tensor_Fundamentals.ipynb)
-- Introducción a tensores, operaciones básicas y manejo de GPU
-- Implementación de perceptrón lineal con producto matricial
-- Estructura de tensores para imágenes (B, C, H, W) y operaciones de reducción
+- Introduction to tensors, basic operations and GPU handling
+- Linear perceptron implementation with matrix product
+- Tensor structure for images (B, C, H, W) and reduction operations
 
 [**02-AF-Linear_Transfer_Function.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/02-AF-Linear_Transfer_Function.ipynb)
-- Función de transferencia lineal (Identity Function)
-- Análisis de la función y su derivada constante
+- Linear transfer function (Identity Function)
+- Function analysis and its constant derivative
 
 [**03-AF-Step_Function.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/03-AF-Step_Function.ipynb)
-- Función de activación Step: activación binaria basada en umbral
-- Visualización y comportamiento de la función escalón
+- Step activation function: threshold-based binary activation
+- Visualization and behavior of the step function
 
 [**04-AF-ReLu_Function.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/04-AF-ReLu_Function.ipynb)
-- ReLU: función de activación estándar en redes modernas
-- Comportamiento con valores negativos y positivos
+- ReLU: standard activation function in modern networks
+- Behavior with negative and positive values
 
 [**04.1-AF-Leaky_ReLu_Function.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/04.1-AF-Leaky_ReLu_Function.ipynb)
-- Leaky ReLU: solución al problema de neuronas muertas
-- Casos de uso en GANs y redes profundas
+- Leaky ReLU: solution to the dying neurons problem
+- Use cases in GANs and deep networks
 
 [**05-AF-Sigmoid_Function.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/05-AF-Sigmoid_Function.ipynb)
-- Sigmoid: transformación a rango [0,1] para clasificación binaria
-- Problema del gradiente desaparecido
+- Sigmoid: transformation to [0,1] range for binary classification
+- Vanishing gradient problem
 
 [**06-AF-Softmax_Function.ipynb**](1-Neural%20Network%20Basics/01-Tensors%20and%20Activations%20Functions/06-AF-Softmax_Function.ipynb)
-- Softmax para clasificación multiclase
-- Conversión de logits a distribución de probabilidades
+- Softmax for multiclass classification
+- Logits to probability distribution conversion
 
 ### 1.2 Feedforward, Error and Backpropagation
 
 [**01-Feedforward_Process.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/01-Feedforward_Process.ipynb)
-- Propagación hacia adelante (forward pass)
-- Construcción de redes multicapa con PyTorch
+- Forward propagation (forward pass)
+- Building multilayer networks with PyTorch
 
 [**02-Error_Functions.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/02-Error_Functions.ipynb)
-- Funciones de error: concepto y tipos
-- MSE para regresión, diferencia entre error con signo y absoluto
+- Error functions: concept and types
+- MSE for regression, difference between signed and absolute error
 
 [**02.1-Error_MSE.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/02.1-Error_MSE.ipynb)
-- Mean Squared Error aplicado a redes neuronales
-- Implementación práctica y visualización
+- Mean Squared Error applied to neural networks
+- Practical implementation and visualization
 
 [**02.4-Error_Cross_Entropy.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/02.4-Error_Cross_Entropy.ipynb)
-- Binary Cross-Entropy y Cross-Entropy multiclase
-- Cálculo con logits vs probabilidades
+- Binary Cross-Entropy and multiclass Cross-Entropy
+- Calculation with logits vs probabilities
 
 [**02.6-Optimization.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/02.6-Optimization.ipynb)
-- Optimización con SGD y learning rate
-- Ciclo completo: forward, backward, step
+- Optimization with SGD and learning rate
+- Complete cycle: forward, backward, step
 
 [**02.7-Backpropagation.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/02.7-Backpropagation.ipynb)
-- Algoritmo de backpropagation en detalle
-- Regla de la cadena y cálculo de gradientes
+- Backpropagation algorithm in detail
+- Chain rule and gradient calculation
 
 [**03-MLP-Non-Conv-Classifcation.ipynb**](1-Neural%20Network%20Basics/02-Feedforward,%20Error%20and%20Backpropagation/03-MLP-Non-Conv-Classifcation.ipynb)
-- MLP sin convoluciones para MNIST
-- Demostración de limitaciones: 669,706 parámetros y pérdida de información espacial
+- MLP without convolutions for MNIST
+- Demonstration of limitations: 669,706 parameters and spatial information loss
 
 ## 2. Convolutional Neural Networks
 
 [**01-CNNs-Kernels-Padding-Stride.ipynb**](2-Convolutional%20Neural%20Networks/01-CNNs-Kernels-Padding-Stride.ipynb)
-- Fundamentos de convolución: kernels, padding y stride
-- Tipos de pooling (MaxPool vs AvgPool) y alternativas modernas
+- Convolution fundamentals: kernels, padding and stride
+- Pooling types (MaxPool vs AvgPool) and modern alternatives
 
 [**02-CNNs-MNIST-Classification.ipynb**](2-Convolutional%20Neural%20Networks/02-CNNs-MNIST-Classification.ipynb)
-- CNN completa para clasificación MNIST
-- Arquitectura con capas convolucionales, pooling y dropout
+- Complete CNN for MNIST classification
+- Architecture with convolutional layers, pooling and dropout
 
 [**02-CNNs-MNIST-Greyscale-Classification.ipynb**](2-Convolutional%20Neural%20Networks/02-CNNs-MNIST-Greyscale-Classification.ipynb)
-- Entrenamiento completo de CNN en MNIST
-- Loop de entrenamiento, evaluación y guardado del modelo
+- Complete CNN training on MNIST
+- Training loop, evaluation and model saving
 
 [**02.1-EXTRA-PreProd-Inference.ipynb**](2-Convolutional%20Neural%20Networks/02.1-EXTRA-PreProd-Inference.ipynb)
-- Inferencia con modelo guardado en producción
-- Preprocesamiento de imágenes externas
+- Inference with saved model in production
+- External image preprocessing
 
 [**03-CNN-CIFAR-10-Normalization.ipynb**](2-Convolutional%20Neural%20Networks/03-CNN-CIFAR-10-Normalization.ipynb)
-- Normalización de imágenes RGB
-- Cálculo manual de media y desviación estándar por canal
+- RGB image normalization
+- Manual calculation of mean and standard deviation per channel
 
 [**03.1-CNN-CIFAR-10-Classification.ipynb**](2-Convolutional%20Neural%20Networks/03.1-CNN-CIFAR-10-Classification.ipynb)
-- CNN para CIFAR-10 (10 clases a color)
-- Visualización de curvas de aprendizaje, detección de plateau y overfitting
+- CNN for CIFAR-10 (10 color classes)
+- Learning curves visualization, plateau and overfitting detection
 
 [**03.2-CNN-CIFAR-10-Color-Scheduler.ipynb**](2-Convolutional%20Neural%20Networks/03.2-CNN-CIFAR-10-Color-Scheduler.ipynb)
-- Schedulers de learning rate (StepLR)
-- Mitigación de plateau con decaimiento adaptativo
+- Learning rate schedulers (StepLR)
+- Plateau mitigation with adaptive decay
 
 [**03.3-CNN-CIFAR-10-Color-Data-Augment.ipynb**](2-Convolutional%20Neural%20Networks/03.3-CNN-CIFAR-10-Color-Data-Augment.ipynb)
-- Data Augmentation: RandomCrop y RandomHorizontalFlip
-- Mejora de generalización combinando scheduler y augmentation
+- Data Augmentation: RandomCrop and RandomHorizontalFlip
+- Generalization improvement combining scheduler and augmentation
 
 [**03.4-CNN-CIFAR-10-Color-Parameter-Tunning_and_GPU.ipynb**](2-Convolutional%20Neural%20Networks/03.4-CNN-CIFAR-10-Color-Parameter-Tunning_and_GPU.ipynb)
-- Ajuste de hiperparámetros y optimización de GPU
-- TensorBoard para visualización en tiempo real
+- Hyperparameter tuning and GPU optimization
+- TensorBoard for real-time visualization
 
 [**03.5-CNN-CIFAR-10-Color-More-Tunning.ipynb**](2-Convolutional%20Neural%20Networks/03.5-CNN-CIFAR-10-Color-More-Tunning.ipynb)
-- Optimización avanzada con ReduceLROnPlateau y label smoothing
-- Técnicas de regularización adicionales para mejorar generalización
-- Análisis de métricas multiclase (Precision, Recall, F1)
+- Advanced optimization with ReduceLROnPlateau and label smoothing
+- Additional regularization techniques to improve generalization
+- Multiclass metrics analysis (Precision, Recall, F1)
 
 [**04-VGGNET16-BN_CIFAR10.ipynb**](2-Convolutional%20Neural%20Networks/04-VGGNET16-BN_CIFAR10.ipynb)
-- Implementación de VGG16 con Batch Normalization para CIFAR-10
-- Arquitectura basada en bloques repetitivos de convoluciones
-- Comparación de rendimiento con CNNs simples (~15M parámetros)
+- VGG16 implementation with Batch Normalization for CIFAR-10
+- Architecture based on repetitive convolution blocks
+- Performance comparison with simple CNNs (~15M parameters)
 
 [**05-ResNet20-CIFAR10.ipynb**](2-Convolutional%20Neural%20Networks/05-ResNet20-CIFAR10.ipynb)
-- ResNet-20: introducción a conexiones residuales (skip connections)
-- Solución al problema del gradiente desvanecido en redes profundas
-- Arquitectura eficiente con 9 bloques residuales y ~270K parámetros
-- Scheduler MultiStepLR para convergencia óptima
+- ResNet-20: introduction to residual connections (skip connections)
+- Solution to the vanishing gradient problem in deep networks
+- Efficient architecture with 9 residual blocks and ~270K parameters
+- MultiStepLR scheduler for optimal convergence
 
-## Requisitos
+## Requirements
 
-Las dependencias del proyecto se encuentran especificadas en `requirements.txt`.
+Project dependencies are specified in `requirements.txt`.
 
-## Uso
+## Usage
 
-Los notebooks están diseñados para ejecutarse secuencialmente dentro de cada sección. Se recomienda seguir el orden numérico.
+Notebooks are designed to be executed sequentially within each section. It is recommended to follow the numerical order.
 
 ## Dataset
 
-Los notebooks descargan automáticamente los datasets necesarios en el directorio `./data` durante la primera ejecución.
+Notebooks automatically download the required datasets to the `./data` directory during the first execution.
 
 ## Hardware
 
-Los notebooks están configurados para aprovechar aceleración GPU mediante CUDA cuando está disponible, con fallback automático a CPU.
+Notebooks are configured to leverage GPU acceleration via CUDA when available, with automatic fallback to CPU.
 
