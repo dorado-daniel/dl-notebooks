@@ -127,7 +127,7 @@
 
 [**02-Fine-Tunning.ipynb**](3-Transfer%20Learning/02-Fine-Tunning.ipynb)
 - Fine-tuning de VGG16 descongelando únicamente las tres últimas capas convolucionales y la cabeza
-- Reemplazo del `AvgPool2d` por `AdaptiveAvgPool2d(1)` y nueva cabeza lineal para 10 clases
+- Reemplazo del `AdaptiveAvgPool2d(7)` por `AdaptiveAvgPool2d(1)` y nueva cabeza lineal para 10 clases
 - Entrenamiento con `Adam` (lr=1e-4), seguimiento de métricas macro en TensorBoard y matriz de confusión final
 
 ## Requisitos
