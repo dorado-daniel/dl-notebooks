@@ -125,6 +125,11 @@
 - Normalización con estadísticas estándar de ImageNet y pipeline de preprocesado con `transforms`
 - Preparación de datasets con `ImageFolder` y carga con `DataLoader` para `train`, `valid` y `test`
 
+[**02-Fine-Tunning.ipynb**](3-Transfer%20Learning/02-Fine-Tunning.ipynb)
+- Fine-tuning de VGG16 descongelando únicamente las tres últimas capas convolucionales y la cabeza
+- Reemplazo del `AvgPool2d` por `AdaptiveAvgPool2d(1)` y nueva cabeza lineal para 10 clases
+- Entrenamiento con `Adam` (lr=1e-4), seguimiento de métricas macro en TensorBoard y matriz de confusión final
+
 ## Requisitos
 
 Las dependencias del proyecto están especificadas en `requirements.txt`.
