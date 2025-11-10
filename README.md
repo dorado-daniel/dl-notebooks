@@ -130,6 +130,14 @@
 - Reemplazo del `AdaptiveAvgPool2d(7)` por `AdaptiveAvgPool2d(1)` y nueva cabeza lineal para 10 clases
 - Entrenamiento con `Adam` (lr=1e-4), seguimiento de métricas macro en TensorBoard y matriz de confusión final
 
+## 4. Detección de Objetos
+
+[**01-RCNN-Classic-VOC2007.ipynb**](4-Object%20Detection/01-RCNN-Classic-VOC2007.ipynb)
+- Implementación paso a paso de R-CNN clásica sobre PASCAL VOC 2007 con Selective Search (~2 000 propuestas/imagen)
+- Extracción de características con `resnet50` preentrenada y generación de crops positivos/negativos mediante IoU
+- Entrenamiento de SVM binario, conjunto de SVM one-vs-rest por clase y regresores Ridge para refinar bounding boxes
+- Pipeline completo de inferencia con `nms`, ajuste de cajas y visualización de detecciones junto a métricas mAP/IoU
+
 ## Requisitos
 
 Las dependencias del proyecto están especificadas en `requirements.txt`.
