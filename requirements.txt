@@ -39,6 +39,7 @@ httpcore==1.0.9
 httpx==0.28.1
 humanfriendly==10.0
 idna==3.11
+ImageIO==2.37.2
 ipykernel==7.0.1
 ipython==9.6.0
 ipython_pygments_lexers==1.1.1
@@ -61,8 +62,10 @@ jupyterlab==4.4.9
 jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.15
+kaggle==1.7.4.5
 kiwisolver==1.4.9
 lark==1.3.0
+lazy_loader==0.4
 lightning-utilities==0.15.2
 Markdown==3.9
 MarkupSafe==3.0.3
@@ -122,6 +125,7 @@ pyparsing==3.2.5
 pyproject_hooks==1.2.0
 python-dateutil==2.9.0.post0
 python-json-logger==4.0.0
+python-slugify==8.0.4
 pytz==2025.2
 PyYAML==6.0.3
 pyzmq==27.1.0
@@ -133,9 +137,11 @@ rfc3986-validator==0.1.1
 rfc3987-syntax==1.1.0
 rpds-py==0.27.1
 rsa==4.9.1
+scikit-image==0.25.2
 scikit-learn==1.7.2
 scipy==1.16.2
 seaborn==0.13.2
+selectivesearch==0.4
 Send2Trash==1.8.3
 setuptools==80.9.0
 six==1.17.0
@@ -146,7 +152,9 @@ sympy==1.14.0
 tensorboard==2.20.0
 tensorboard-data-server==0.7.2
 terminado==0.18.1
+text-unidecode==1.3
 threadpoolctl==3.6.0
+tifffile==2025.10.16
 tinycss2==1.4.0
 torch==2.9.0
 torchmetrics==1.8.2
